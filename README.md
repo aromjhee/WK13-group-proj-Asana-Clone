@@ -45,8 +45,7 @@ Tasks can be assigned to specific projects where they can be organized into cate
 ![proj-CRUD-gif](public/images/drag-n-drop.gif)
 
 - Create and manage columns and tasks
-![tasks-CRUD-gif](public/images/create-new-task.gif)
-![columns-CRUD-gif](public/images/create-new-column.gif)
+![columns-tasks-CRUD-gif](public/images/columns-n-tasks.gif)
 
 - Unit tests
 	- Models exists and creates good instances
