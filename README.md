@@ -42,10 +42,7 @@ Tasks can be assigned to specific projects where they can be organized into cate
 ![home-page](public/images/home-page.png)
 
 - Drag-n-drop using React
-<<<<<<< HEAD
 
-=======
->>>>>>> 584e4e920da9f3edc8cce8722aa5551e3cb7c259
 
 - Create and manage projects
 ![proj-CRUD-gif](public/images/drag-n-drop.gif)
