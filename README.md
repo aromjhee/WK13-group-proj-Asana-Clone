@@ -72,7 +72,7 @@ Tasks can be assigned to specific projects where they can be organized into cate
 ### Front-end
 - Using custom CSS 
 - Implementing modals into pages
-- Using autoplaying vidoe
+- Using autoplaying video
 - Implementing JS to pug files
 - React Components
   - utilized React Beautiful DnD to create fluid, intuitive interactions with task cards in the browser
