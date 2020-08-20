@@ -39,7 +39,7 @@ Tasks can be assigned to specific projects where they can be organized into cate
 # Features
 
 - Professional landing page
-![home-page](public/images/home-page.png)
+![home-page](public/images/home-page.gif)
 
 - Drag-n-drop using React
 ![proj-CRUD-gif](public/images/drag-n-drop.gif)
