@@ -192,4 +192,6 @@ it('exists and creates a good instance',  async  ()  =>  {
 - Allow users to delete teams
 - Allow users to invite other users to team
 
-
+<!-- NOTE for debugging-->
+<!-- make sure url in react.js does not end with '/' -->
+<!-- double check column.js and react.js url if it's heroku or local -->
