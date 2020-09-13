@@ -450,7 +450,7 @@ i {
 .logout:hover {
   /* background-color: #cbd4db; */
   color: lightcoral; 
-  font-size: larger
+  font-size: larger;
   cursor: pointer;
 }
 
