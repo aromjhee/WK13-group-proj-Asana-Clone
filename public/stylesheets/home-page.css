@@ -47,8 +47,12 @@ nav {
   background: linear-gradient(to right, #4e54c8, #8f94fb); 
 }
 
-
-
+.log-in-link:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 25px;
+}
 
 h2 {
   margin-bottom: 50px; 
@@ -132,7 +136,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(78, 78, 78);
-  height: 125px;
+  height: 95px;
   width: 100%;
   text-align: center;
   vertical-align: middle;
@@ -159,10 +163,10 @@ footer {
 
 
 .fa a:hover {
-    opacity: 0.7;
-    transition: 0.3s;
-    cursor: pointer;
-    font-size: 20px; 
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .fa a {
