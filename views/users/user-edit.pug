@@ -19,9 +19,18 @@ block content
                   option(value=existingTeam.id)= existingTeam.teamName
                 option(value='remove') Remove Team
         div(class='py-4')
-          button(type='submit' class='btn btn-secondary') Update Profile
-          if user.teamId
-            a(href=`/teams/${teamId}/projects` class='btn btn-secondary ml-2') Cancel
-          else 
-            a(href=`/users/${userId}/noteam` class='btn btn-secondary ml-2') Cancel
+          if user.firstName === 'Demo'
+            div(class='edit-demo-account-button-div')
+              p(class='cannot-edit-text') Cannot Edit Demo Account
+              button(type='submit' class='btn btn-secondary btn-height' disabled="disabled") Update Profile
+              if user.teamId
+                a(href=`/teams/${teamId}/projects` class='btn btn-secondary btn-height ml-2 cancel-button-margin-right') Cancel
+              else 
+                a(href=`/users/${userId}/noteam` class='btn btn-secondary btn-height ml-2 cancel-button-margin-right') Cancel
+          else
+            button(type='submit' class='btn btn-secondary') Update Profile
+            if user.teamId
+              a(href=`/teams/${teamId}/projects` class='btn btn-secondary ml-2') Cancel
+            else 
+              a(href=`/users/${userId}/noteam` class='btn btn-secondary ml-2') Cancel
 

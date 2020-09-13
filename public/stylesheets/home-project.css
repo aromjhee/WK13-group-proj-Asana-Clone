@@ -822,10 +822,29 @@ i {
 
 }
 
+.edit-demo-account-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
 
+.cannot-edit-text {
+  font-size: 12px;
+  font-weight: 200;
+  color: red;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
 
+.cancel-button-margin-right {
+  margin-right: 25px;
+}
 
-
+.btn-height {
+  height: 30px;
+}
 
 
 
