@@ -29,9 +29,11 @@ html
     //-     img(src="/images/timbuk.png")
     .body-video
       div.video-1
-        video(src="/assets/videos/board-demo.mp4" autoplay="" loop="")
+        video(src="/assets/videos/board-demo.mp4" autoplay loop muted)
+        //- video(autoplay="" loop="")
+        //-   source(src="/assets/videos/board-demo.mp4" type="video/mp4")
       div.video-2
-        video(src="/assets/videos/board-demo-2.mp4" autoplay="" loop="")
+        video(src="/assets/videos/board-demo-2.mp4" autoplay loop muted)
     section.cards
       section.message
         h3 Get Organized
@@ -46,12 +48,12 @@ html
     section.footer-text
       div(class='footer-text') C.A.R.L. presented by: 
       i.fa.fa-external-link-square 
-          a(target="_blank" href='https://colerutledge.github.io/') Cole
+          a(target="_blank" rel="noopener noreferrer" href='https://colerutledge.github.io/') Cole
       i.fa.fa-external-link-square 
-          a(target="_blank" href='https://aromjhee.github.io/') Arom
+          a(target="_blank" rel="noopener noreferrer" href='https://aromjhee.github.io/') Arom
       i.fa.fa-external-link-square  
-          a(target="_blank" href="https://rockyboyyang.github.io/") Rocky
+          a(target="_blank" rel="noopener noreferrer" href="https://rockyboyyang.github.io/") Rocky
       i.fa.fa-github-square 
-          a(target="_blank" href="https://github.com/Arol15") Lora
+          a(target="_blank" rel="noopener noreferrer" href="https://github.com/Arol15") Lora
 
 
