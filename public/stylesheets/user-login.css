@@ -32,11 +32,12 @@ body {
 
 .form-container {
     width: 90%; 
-    margin: auto; 
+    margin: 6rem auto; 
     max-width: 45rem;
-    height: 50rem;
+    height: auto;
     background-color: #fff;
-    padding: 10rem 5rem; 
+    padding: 3rem 5rem;
+    padding-bottom: 2em; 
     box-shadow: 0 1px 3px 0 rgba(21,27,38,.15); 
     border-radius: 15px; 
     /* position: relative; */
@@ -46,11 +47,13 @@ body {
     color: #273240; 
     font-size: 28px; 
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .authForm {
-    padding: 2rem 0; 
-    padding-bottom: 0; 
+    /* padding: 2rem 0; 
+    padding-bottom: 0;  */
+    padding: 0;
     display: flex; 
     flex-direction: column;
     margin: 0px auto;  
@@ -61,8 +64,7 @@ body {
     margin: 0 auto; 
     position: relative; 
     display: flex; 
-    align-items: baseline; 
-    padding: 1rem; 
+    padding: 0.3rem; 
 }
 
 .input-group input {
@@ -81,7 +83,6 @@ body {
     background-color: rgba(0,0,0,.1);
     width: 100%; 
     height: 1px; 
-      
 }
 
 
@@ -101,7 +102,8 @@ body {
 
 
 .input-group button {
-    margin: 2rem auto; 
+    margin: 20px auto;
+    margin-bottom: 0; 
     padding: .5rem 3rem; 
     background: linear-gradient(to right, #FF5F6D, #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none; 
@@ -109,11 +111,8 @@ body {
     font-size: 1.5rem; 
     cursor: pointer; 
     border-radius: 3rem; 
-    outline: none; 
-    margin-bottom: 0; 
+    outline: none;  
     
-
-
 }
 
 

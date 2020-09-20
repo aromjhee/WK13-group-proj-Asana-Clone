@@ -33,11 +33,11 @@ body {
 
 .form-container {
     width: 90%; 
-    margin: 2rem auto; 
+    margin: 6rem auto; 
     max-width: 45rem;
     height: auto;
     background-color: #fff;
-    padding: 10rem 5rem; 
+    padding: 3rem 5rem; 
     padding-bottom: 2em; 
     box-shadow: 0 1px 3px 0 rgba(21,27,38,.15); 
     border-radius: 15px; 
@@ -47,6 +47,7 @@ body {
     color: #273240; 
     font-size: 28px; 
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .authForm {
@@ -61,7 +62,6 @@ body {
     margin: 0 auto; 
     position: relative; 
     display: flex; 
-    align-items: baseline; 
     padding: 0.3rem; 
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .input-group button {
-    margin: 2rem auto; 
+    margin: 20px auto; 
     margin-bottom: 0; 
     padding: .5rem 3rem; 
     background: linear-gradient(to right, #FF5F6D, #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
