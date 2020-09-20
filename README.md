@@ -6,7 +6,7 @@ Tasks can be assigned to specific projects where they can be organized into cate
 
 # Live Link
 
-[C.A.R.L Work-flow Manager](https://hidden-fortress-08833.herokuapp.com/)
+[C.A.R.L Work-flow Manager](https://hidden-fortress-08833.herokuapp.com/){target="_blank"}
 
 # Technologies
 
