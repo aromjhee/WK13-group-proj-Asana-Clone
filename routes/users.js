@@ -53,9 +53,10 @@ router.post('/users/register-demo', csrfProtection, asyncHandler(async (req, res
         loginUser(req, res, user)
         return res.redirect(`/teams/${user.teamId}/projects`)
       }
+    } else {
+      errors.push('Login failed for the provided email address and password')
+      throw res
     }
-
-    errors.push('Login failed for the provided email address and password')
   } catch (err) {
     errors = err.errors.map(error => error.message)
   }

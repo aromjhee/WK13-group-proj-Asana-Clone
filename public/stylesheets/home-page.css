@@ -19,7 +19,6 @@ nav {
   padding: 8px; 
   font-size: 20px;
   font-family: 'Michroma', sans-serif;
-   
 }
 
 .nav-item a{
@@ -146,6 +145,12 @@ footer {
 
 .footer-text {
   font-family: 'Michroma', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icons {
+  display: flex;
 }
 
 .fa {
