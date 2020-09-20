@@ -12,70 +12,69 @@ html
       title Home - C.A.R.L.
     body
       div.main
-        .side-bar
-          div.upper-part
-            .tabs.home
-              div.name C.A.R.L.
-              div.home-icons 
-                i.fa.fa-home
-                a(href=`/teams/${teamId}/projects`) Home
-            .tabs.teammates
-              div.teammates-header Team Members
-              div.teammate-index
-              if teammates
-                each teammate in teammates
-                  div.icons
-                    i.fa.fa-user-o
-                    div.teams-row #{teammate.firstName} #{teammate.lastName}
-            .tabs.projects
-              div.projects-header Projects
-              div.projects-index
-              if projects
-                each existingProject in projects
-                  .project-list
-                    a(href=`/teams/${teamId}/projects/${existingProject.id}/columns`)
-                      div.icons-projects
-                        i.fa.fa-pencil-square-o
-                        div.project-name= existingProject.projectName
-          .tabs.footer
-            div.for-button
-              img.invite-peeps(src="/images/invite_peeps.png")
-              p Invite your team and start collaborating!
-              #button 
-                p
-                  a(href='/users/register') Invite to C.A.R.L.
-        .main-page-none
-          .nav-nav-bar-1
-            .nav-bar-div
-              i.nav-bar-item.side-bar-opener.fa.fa-bars
-              h3 Home
-            if team
-              h3 Your Team: #{team.teamName}
-            .nav-bar-div
-              if user
-                h3 Welcome #{user.firstName}!
-              else
-                h3 Welcome Test User!
-              if userId
-                .initials-div 
-                  p #{initials}
-                  .user-options(style="display: none")
-                    div(onclick=`location.href='/users/edit/${userId}';`) Edit Profile
-                    div
-                      form.navbar-nav#logoutForm(action='/users/logout' method='post')
-                        .logout(onClick="javascript:document.getElementById('logoutForm').submit();") 
-                          p Logout
-                        //- input.logout.nav-item.text-muted(type='submit' value='Logout')
-          block content
-    //- footer
-    //-   section.footer-text
-    //-       div(class='footer-column') C.A.R.L. presented by: 
-    //-       div.footer-icons
-    //-         i.fa.fa-external-link-square 
-    //-           a(target="_blank" href='https://colerutledge.github.io/') Cole
-    //-         i.fa.fa-external-link-square 
-    //-           a(target="_blank" href='https://aromjhee.github.io/') Arom
-    //-         i.fa.fa-external-link-square  
-    //-           a(target="_blank" href="https://rockyboyyang.github.io/") Rocky
-    //-         i.fa.fa-github-square 
-    //-           a(target="_blank" href="https://github.com/Arol15") Lora
+        div.sidebar-and-main
+          .side-bar
+            div.upper-part
+              .tabs.home
+                div.name C.A.R.L.
+                div.home-icons 
+                  i.fa.fa-home
+                  a(href=`/teams/${teamId}/projects`) Home
+              .tabs.teammates
+                div.teammates-header Team Members
+                div.teammate-index
+                if teammates
+                  each teammate in teammates
+                    div.icons
+                      i.fa.fa-user-o
+                      div.teams-row #{teammate.firstName} #{teammate.lastName}
+              .tabs.projects
+                div.projects-header Projects
+                div.projects-index
+                if projects
+                  each existingProject in projects
+                    .project-list
+                      a(href=`/teams/${teamId}/projects/${existingProject.id}/columns`)
+                        div.icons-projects
+                          i.fa.fa-pencil-square-o
+                          div.project-name= existingProject.projectName
+            .tabs.footer
+              div.for-button
+                img.invite-peeps(src="/images/invite_peeps.png")
+                p Invite your team and start collaborating!
+                #button 
+                  p
+                    a(href='/users/register') Invite to C.A.R.L.
+          .main-page-none
+            .nav-nav-bar-1
+              .nav-bar-div
+                i.nav-bar-item.side-bar-opener.fa.fa-bars
+                h3 Home
+              if team
+                h3 Your Team: #{team.teamName}
+              .nav-bar-div
+                if user
+                  h3 Welcome #{user.firstName}!
+                else
+                  h3 Welcome Test User!
+                if userId
+                  .initials-div 
+                    p #{initials}
+                    .user-options(style="display: none")
+                      div(onclick=`location.href='/users/edit/${userId}';`) Edit Profile
+                      div
+                        form.navbar-nav#logoutForm(action='/users/logout' method='post')
+                          .logout(onClick="javascript:document.getElementById('logoutForm').submit();") 
+                            p Logout
+                          //- input.logout.nav-item.text-muted(type='submit' value='Logout')
+            block content
+        footer
+          section.footer-text
+          i.fa.fa-external-link-square.footer-icons 
+              a(target="_blank" href='https://colerutledge.github.io/') Cole
+          i.fa.fa-external-link-square.footer-icons 
+              a(target="_blank" href='https://aromjhee.github.io/') Arom
+          i.fa.fa-external-link-square.footer-icons  
+              a(target="_blank" href="https://rockyboyyang.github.io/") Rocky
+          i.fa.fa-github-square.footer-icons 
+              a(target="_blank" href="https://github.com/Arol15") Lora
