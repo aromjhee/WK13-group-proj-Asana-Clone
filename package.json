@@ -1,6 +1,9 @@
 {
   "name": "asana-clone",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.11.1"
+  },
   "description": "a/A Week 12 Full Stack Project - Asana Clone",
   "main": "app.js",
   "scripts": {
